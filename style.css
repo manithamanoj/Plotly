@@ -1,0 +1,49 @@
+.header-image {
+    background-image: url("data-thumbnail-module-12.png");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .jumbotrom p{
+    color:black !important;
+    font-weight:bold !important;
+  }
+  .jumbotrom h1{
+    color:black !important;
+    font-weight:bold !important;
+  }
+  body {
+    background-color:ghostwhite;
+  }
+  .panelcolor{
+      border: 1px solid rgb(78, 142, 211);
+      background-color:rgb(242, 247, 249)
+  }
+  .panel-heading{
+    background-color:rgb(80, 80, 170) !important; 
+
+  }
+  .well{
+    background-color: rgb(80, 80, 170) !important;
+  }
+  .well h5{
+       color: white;
+    }
+    .embossed{
+        color: #080101;
+        font-size: 100px;
+        font-family: Futura;
+        background-color: #666666;
+        text-shadow: 1px 4px 4px #555;
+        text-align: center;
+        background-clip: text;
+        -moz-background-clip: text;
+      
+      }
+      .p1 {
+        font-family: "Garamond", Serif;
+      }
+      
+      

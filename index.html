@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center header-image ">
+        <h1 class="embossed">Belly Button Biodiversity Dashboard</h1>
+        <p class="embossed">Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="article">
+       <div class="row">
+          <div class="col-md-4 ">
+              <h2 class="p1"><strong>What do you think is in your belly button?</strong></h2>
+            </div>
+             <div class="col-md-8">
+              <p  class="p1" style="font-size:1.5vw">
+                In January 2011, a team of scientists launched the Belly Button Biodiversity Project to find out the microbes colonizing in our belly button and the factors that might influence the microscopic life.
+                “We're interested in helping people understand and appreciate the microscopic species with which we share our daily lives,” says team member Dr. Holly Menninger, an entomologist and NC State’s director of public science. 
+                Here Roza is doing a research on these microbes from navel . This dashboard has a completed panel for demographic information and visualized the bacterial data for each volunteer. More specifically, her volunteers should be able to identify the top 10 bacterial species in their belly buttons.That way, if Improbable Beef identifies a species as a candidate to manufacture synthetic beef, Roza's volunteers will be able to identify whether that species is found in their navel.
+                Select the Id numbers to know the demographic info of each participants and see which bacterial species live in!
+                
+              </p>
+            </div>
+          </div>
+       </div>
+      </div>
+  </div>
+  <div class="row ">
+    <div class="col-md-1 h-50">&nbsp;</div> 
+  </div>
+  <div class="row">
+    <div class="col-md-1"></div>
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body panelcolor" ></div>
+        </div>
+      </div>
+      
+    
+      <div class="col-md-8">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Bar Chart</a></li>
+          <li><a data-toggle="tab" href="#menu1">Bubble Chart</a></li>
+         
+        </ul>
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <div id="bar"></div>
+         </div>
+          <div id="menu1" class="tab-pane fade">
+            <div id="bubble"></div>
+          </div>
+          
+        </div>
+        
+        
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+      <div class="col-md-5">
+         <h4>Belly Button Washing Frequency</h4>
+        <div id="gauge"></div>
+       </div>
+    </div>
+   
+     
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
